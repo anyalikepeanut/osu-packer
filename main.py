@@ -41,7 +41,7 @@ bmap = os.listdir(bmapdir)
 skin = os.listdir(skindir)
 def homescr(messages=None):
     print('    Welcome to the osu! beatmaps and skins packer!')
-    print('    This program will pack beatmaps and/or skins into .osz and .osk files')
+    print('    This program will pack osu! beatmaps and skins folder into .osz or .osk files')
     print('  --------------------------------------------------------------')
     print('    Select the action you want to perform:')
     print('       1. Pack beatmaps and skins')
@@ -85,7 +85,7 @@ def menu(message=None):
 
 def datawarn():
     if os.path.exists('results'):
-        print('This will delete ALL DATA in the \'results\' folder, are you sure? (y/n)')
+        print('This will wipe ALL DATA in the \'results\' folder, are you sure? (y/n)')
         sure = input('(choose y or n): ')
         if sure == 'y':
             sure = True
