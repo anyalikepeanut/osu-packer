@@ -69,13 +69,13 @@ def homescr(messages=None):
         print(messages)
 
 def bmappack(resultpath):
-    for beatmap in tqdm(bmap, desc='Packing beatmaps', bar_format = '{l_bar}{bar}| {n_fmt}/{total_fmt} beatmaps (this might take a while)'):
+    for beatmap in tqdm(bmap, desc='Packing beatmaps', bar_format = '{l_bar}{bar}| {n_fmt}/{total_fmt} beatmap folders'):
         if os.path.isdir(f'{bmapdir}\\{beatmap}'):
             shutil.make_archive(f'{resultpath}\\{beatmap}', 'zip', f'{bmapdir}\\{beatmap}')
             os.rename(f'{resultpath}\\{beatmap}.zip', f'{resultpath}\\{beatmap}.osz')
 
 def skinpack(resultpath):
-    for skin2 in tqdm(skin, desc='Packing skins', bar_format = '{l_bar}{bar}| {n_fmt}/{total_fmt} skins (this might take a while)'):
+    for skin2 in tqdm(skin, desc='Packing skins', bar_format = '{l_bar}{bar}| {n_fmt}/{total_fmt} skins'):
         if os.path.isdir(f'{skindir}\\{skin2}'):
             shutil.make_archive(f'{resultpath}\\{skin2}', 'zip', f'{skindir}\\{skin2}')
             os.rename(f'{resultpath}\\{skin2}.zip', f'{resultpath}\\{skin2}.osk')
