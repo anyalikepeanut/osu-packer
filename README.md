@@ -1,2 +1,7 @@
-# <img src="osupacker.ico" width="30"> osu-packer
-a tool to pack beatmaps and skins to .osz and .osk file
+# <img src="src/osupacker.ico" width="40"> osu-packer
+A simple tool to pack beatmaps and skins to .osz and .osk file
+
+Preview of the app:
+![](src/preview.png)
+
+will make a GUI version soon
