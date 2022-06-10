@@ -15,7 +15,7 @@ def autodetect():
         return False
 
 def outputpath():
-    print('Set ur output path (default is the app folder, set it to blank to use the default)')
+    print('Set your output path (default is the app folder, set it to blank to use the default)')
     output = input(f'(default is {cwd}): ')
     if output == '':
         outpath = cwd 
@@ -44,7 +44,7 @@ else:
             config.write(configfile)
     else:
         print('Could not find osu! installation, please specify the path manually')
-        osupath = input('Enter the path to osu!: ')
+        osupath = input('Enter the path of the osu! folder: ')
         bmapdir = f'{osupath}\\Songs'
         skindir = f'{osupath}\\Skins'
         outpath = outputpath()
@@ -81,7 +81,7 @@ def skinpack(resultpath):
             os.rename(f'{resultpath}\\{skin2}.zip', f'{resultpath}\\{skin2}.osk')
 
 def packagain():
-    print('Are u wanna pack beatmaps and skins again? (y/n)')
+    print('Do you wanna pack beatmaps and skins again? (y/n)')
     sure = input('(choose y or n): ')
     if sure == 'y':
         os.system('cls')
