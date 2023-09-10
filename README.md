@@ -6,4 +6,4 @@ A simple tool to pack beatmaps and skins to .osz and .osk file
 Preview of the app:\
 ![](src/preview.png)
 
-will make a GUI version soon
+will (not) make a GUI version soon
